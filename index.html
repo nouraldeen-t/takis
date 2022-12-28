@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>TAKIS</title>
+</head>
+
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="img/takislog.png" class="logo"></a>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Menu</a>
+                </li>
+                <li>
+                    <a href="#">What's New</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>it's not just chips<br>it's<span>TAKIS</span></h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, tenetur dolore blanditiis
+                    recusandae nulla molestiae nisi dicta deserunt delectus culpa illo dolor nihil eius facilis est!
+                    Pariatur voluptatem quisquam, tenetur doloremque fugit velit distinctio aliquam, rem enim ipsa
+                    libero dolorum!</p>
+                <a href="#" class="pink">Learn more</a>
+            </div>
+            <div class="imgBox">
+                <img src="img/reds.png" class="takis">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li ><img src="img/blues.png" onclick="imgSlider('img/blues.png');background1()"></li>
+            <li><img src="img/greens.png" onclick="imgSlider('img/greens.png');background2()"></li>
+            <li><img src="img/reds.png" onclick="imgSlider('img/reds.png');background3()"></li>
+        </ul>
+
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.takis').src = anything;
+        }
+        function background1(){
+            document.querySelector('.sec').style.backgroundImage="url('img/blueback.jpg')"
+        }
+        function background2() {
+                document.querySelector('.sec').style.backgroundImage = "url('img/green back.jpeg')";
+            }
+        function background3() {
+            document.querySelector('.sec').style.backgroundImage = "url('img/redback.jpg')";
+        }
+
+    </script>
+</body>
+
+</html>
