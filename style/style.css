@@ -41,6 +41,7 @@ header ul li a{
     margin-left: 40px;
     text-decoration: none;
 }
+
 .content{
     position: relative;
     width: 100%;
@@ -58,7 +59,7 @@ header ul li a{
     background-color: rgb(82, 0, 57);
 }
 .content .textbox h2{
-    color: #333;
+    color: rgb(247, 111, 0);
     font-size: 4em;
     line-height: 1.4em;
     font-weight: 500;
@@ -69,7 +70,7 @@ header ul li a{
     font-weight: 800;
 }
 .content .textbox p{
-    color: #333;
+    color: rgb(255, 249, 249);
 }
 .content .textbox a{
     display: inline-block;

@@ -44,7 +44,7 @@
             </div>
         </div>
         <ul class="thumb">
-            <li ><img src="img/blues.png" onclick="imgSlider('img/blues.png');background1()"></li>
+            <li><img src="img/blues.png" onclick="imgSlider('img/blues.png');background1()"></li>
             <li><img src="img/greens.png" onclick="imgSlider('img/greens.png');background2()"></li>
             <li><img src="img/reds.png" onclick="imgSlider('img/reds.png');background3()"></li>
         </ul>
@@ -54,14 +54,20 @@
         function imgSlider(anything) {
             document.querySelector('.takis').src = anything;
         }
-        function background1(){
-            document.querySelector('.sec').style.backgroundImage="url('img/blueback.jpg')"
+        function background1() {
+            document.querySelector('.sec ').style.backgroundImage = "url('img/blueback.jpg')";
+            document.querySelector('.sec ').style.backgroundRepeat = 'no-repeat';
+            document.querySelector('.sec ').style.backgroundSize = '100%';
         }
         function background2() {
-                document.querySelector('.sec').style.backgroundImage = "url('img/green back.jpeg')";
-            }
+            document.querySelector('.sec ').style.backgroundImage = "url('img/green back.jpeg')";
+            document.querySelector('.sec ').style.backgroundRepeat = "no-repeat";
+            document.querySelector('.sec ').style.backgroundSize = '100%';
+        }
         function background3() {
             document.querySelector('.sec').style.backgroundImage = "url('img/redback.jpg')";
+            document.querySelector('.sec ').style.backgroundRepeat = 'no-repeat';
+            document.querySelector('.sec ').style.backgroundSize = '100%';
         }
 
     </script>
